@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Validator</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="index.css">
+
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <!-- Black div layer -->
+    <div id="opa">
+    </div>
+
+        <h1>Phone Number Validator</h1>
+        <div id="data" class="display box">
+            <p >Validity:   <span class="info">-</span></p>
+            <p >Phone Number:   <span class="info">-</span></p>
+            <p>Local Format:   <span class="info">-</span></p>
+            <p>International Format:   <span class="info">-</span></p>
+            <p>Country Phone Code:   <span class="info">-</span></p>
+            <p>Country Code:   <span class="info">-</span></p>
+            <p>Country Name:   <span class="info">-</span></p>
+            <p>Location:   <span class="info">-</span></p>
+            <p >Carrier:   <span class="info">-</span></p>
+            <p>Line Type:   <span class="info">-</span></p>
+            <p> Error:   <span class="info"></span></p>
+            <button class="btn">Return</button>
+        </div>
+
+        <form action="/" method="post" class="box" >
+        <input type="text" name="number" placeholder="Enter Phone Number" id="number">
+        <input type="text" name="country_code" placeholder="Enter Country Phone Code" id="code">
+        <button type="submit" class="btn">Send</button>
+        </form>
+
+        <script src="./files/data.json"></script>
+        <script src="index.js"></script>
+</body>
+</html>
